@@ -24,8 +24,8 @@ for mes in lista_meses:
       vendas = tabela_vendas.loc[tabela_vendas['Notas'] > 100, 'Notas'].values[0]
       print(f'Nesse bimestre os alunos nota 11 do {mes}  que estão como vencedores são : {alunos}, Nota: {vendas}')
       message = client.messages.create(
-              to="+5588988848251",
-              from_="+15594130353",
+              to="coloque aqui o seu telefone",
+              from_="coloque o numero da twilio",
               body=f'Nesse bimestre os alunos nota 11 do {mes}  que estão como vencedores são : {alunos}, Nota: {vendas}')
       print(message.sid)
 
